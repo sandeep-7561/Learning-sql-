@@ -1,0 +1,423 @@
+Bilkul bro. 🔥 Ab hum **SQL ko bilkul zero se start karenge**, aur main waise hi sikhaunga jaise maine tujhe Git aur API samjhaya tha.
+
+**Rule ek hi hai:**
+
+> **Har line ka matlab samjhenge. Sirf code yaad nahi karenge.**
+
+Aur ek baat aur...
+Jo screenshot tune bheja hai usse lag raha hai ki **MySQL Workbench sahi install ho gaya hai** aur tu query editor me hai. Perfect! 👍
+
+---
+
+# 📚 SQL Learning Roadmap (Professional)
+
+Hum is order me chalenge:
+
+### Phase 1: Basics
+
+* ✅ SQL kya hota hai?
+* ✅ Database kya hota hai?
+* ✅ Table kya hoti hai?
+* ✅ Row aur Column kya hote hain?
+* ✅ Data Types
+
+---
+
+### Phase 2: CRUD
+
+* CREATE
+* INSERT
+* SELECT
+* UPDATE
+* DELETE
+
+---
+
+### Phase 3: Advanced
+
+* WHERE
+* ORDER BY
+* LIMIT
+* LIKE
+* IN
+* BETWEEN
+
+---
+
+### Phase 4
+
+* Primary Key
+* Foreign Key
+* Joins
+* Aggregate Functions
+
+---
+
+### Phase 5
+
+Python + VS Code
+
+```text
+Streamlit
+      │
+      ▼
+Python
+      │
+      ▼
+MySQL
+```
+
+---
+
+# Lecture 1
+
+## Sabse pehle SQL hota kya hai?
+
+SQL ka full form
+
+> **Structured Query Language**
+
+Ab isko word by word samajh.
+
+### Structured
+
+Matlab
+
+Data ko ek proper format me rakhna.
+
+Example
+
+Student
+
+| ID | Name    | Age |
+| -- | ------- | --- |
+| 1  | Sandeep | 20  |
+| 2  | Rahul   | 21  |
+
+Ye structured data hai.
+
+---
+
+### Query
+
+Query matlab
+
+👉 Database ko diya gaya instruction.
+
+Jaise
+
+> "Mujhe saare students dikhao."
+
+Ye ek query hai.
+
+Ya
+
+> "Ek naya student add karo."
+
+Ye bhi query hai.
+
+---
+
+### Language
+
+Computer ko samjhane wali language.
+
+Isliye
+
+SQL = Database se baat karne ki language.
+
+---
+
+# Database kya hota hai?
+
+Database ek digital almari hai.
+
+Jaise ghar me almari hoti hai.
+
+Usme kapde hote hain.
+
+Database me
+
+* Students
+* Employees
+* Products
+* Orders
+
+save hote hain.
+
+Example
+
+```text
+School Database
+
+Students
+Teachers
+Subjects
+Fees
+Attendance
+```
+
+Sab ek hi database me.
+
+---
+
+# Table kya hoti hai?
+
+Database ke andar tables hoti hain.
+
+Example
+
+Database
+
+```text
+School
+```
+
+Uske andar
+
+```text
+Students
+```
+
+Table
+
+| ID | Name    | Age |
+| -- | ------- | --- |
+| 1  | Sandeep | 20  |
+| 2  | Rahul   | 22  |
+
+Ye table hai.
+
+---
+
+# Row kya hoti hai?
+
+Har horizontal line
+
+| ID | Name    | Age |       |
+| -- | ------- | --- | ----- |
+| 1  | Sandeep | 20  | ← Row |
+
+---
+
+# Column kya hota hai?
+
+Vertical line
+
+|ID|Name|Age|
+
+Ye teen columns hain.
+
+---
+
+# Ab screenshot me jo likha hai
+
+Tumne likha
+
+```sql
+CREATE DATABASE startersql;
+```
+
+Ab isko line by line samajhte hain.
+
+---
+
+## CREATE
+
+English
+
+> Create = Banana
+
+SQL me
+
+> Nayi cheez banao.
+
+---
+
+## DATABASE
+
+English
+
+> Database
+
+Matlab
+
+Ek naya database.
+
+---
+
+## startersql
+
+Ye database ka naam hai.
+
+Tum kuch bhi rakh sakte ho.
+
+Example
+
+```sql
+CREATE DATABASE school;
+```
+
+ya
+
+```sql
+CREATE DATABASE hospital;
+```
+
+ya
+
+```sql
+CREATE DATABASE employee;
+```
+
+---
+
+## ;
+
+Ye bahut important hai.
+
+Isko bolte hain
+
+**Semicolon**
+
+Meaning
+
+> Statement khatam.
+
+Jaise English me
+
+```
+.
+```
+
+lagate hain.
+
+Waise SQL me
+
+```
+;
+```
+
+lagta hai.
+
+---
+
+# Syntax kya hota hai?
+
+Ye sabse important question hai.
+
+Suppose English me
+
+Tum bolte ho
+
+> I eat mango.
+
+Ye sahi grammar hai.
+
+Lekin
+
+> Mango eat I
+
+Galat hai.
+
+Words same hain.
+
+Order galat hai.
+
+Isi ko syntax bolte hain.
+
+---
+
+Programming me bhi
+
+Ye sahi hai
+
+```sql
+CREATE DATABASE school;
+```
+
+Ye galat
+
+```sql
+DATABASE CREATE school;
+```
+
+Kyuki syntax galat hai.
+
+---
+
+# VS Code me SQL likhen ya Workbench me?
+
+Ye confusion sabko hoti hai.
+
+### Workbench
+
+Learning
+
+Testing
+
+Database banana
+
+Tables banana
+
+Queries check karna
+
+---
+
+### VS Code
+
+Real project
+
+Python
+
+Streamlit
+
+FastAPI
+
+Sab VS Code me.
+
+Example
+
+```python
+cursor.execute("""
+SELECT * FROM students
+""")
+```
+
+Yaha SQL bhi hai aur Python bhi.
+
+Matlab
+
+VS Code ke andar SQL likhte hain.
+
+---
+
+# Homework (Lecture 1)
+
+Aaj sirf ye commands Workbench me likho aur execute karo:
+
+```sql
+CREATE DATABASE school;
+```
+
+Agar error aaye ki database already exist karta hai, to ye try karo:
+
+```sql
+CREATE DATABASE college;
+```
+
+Phir left side ke **SCHEMAS** panel me right-click karke **Refresh All** karo. Tumhe naya database dikh jayega.
+
+---
+
+## 📌 Hamara Rule
+
+Har lecture ke baad main tujhe:
+
+* Theory samjhaunga.
+* Har keyword ka English aur Hindi meaning bataunga.
+* Syntax kya hai aur kyun hai, woh bataunga.
+* Workbench me kya likhna hai aur VS Code me kab likhna hai, woh alag se clear karunga.
+* Fir ek chhota practical karwayenge.
+
+**Next Lecture:** **Data Types (`INT`, `VARCHAR`, `DATE`, `FLOAT`), Table kaise banti hai (`CREATE TABLE`), aur har line ka meaning.** Ye SQL ki asli shuruaat hogi. 🚀
