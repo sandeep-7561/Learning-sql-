@@ -1,14 +1,3 @@
-Bilkul bro. 🔥 Ab hum **SQL ko bilkul zero se start karenge**, aur main waise hi sikhaunga jaise maine tujhe Git aur API samjhaya tha.
-
-**Rule ek hi hai:**
-
-> **Har line ka matlab samjhenge. Sirf code yaad nahi karenge.**
-
-Aur ek baat aur...
-Jo screenshot tune bheja hai usse lag raha hai ki **MySQL Workbench sahi install ho gaya hai** aur tu query editor me hai. Perfect! 👍
-
----
-
 # 📚 SQL Learning Roadmap (Professional)
 
 Hum is order me chalenge:
