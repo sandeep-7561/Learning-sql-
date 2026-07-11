@@ -42,3 +42,24 @@ SELECT * FROM students WHERE age = 20;
 SELECT * FROM students WHERE age = 20;
 SELECT * FROM students WHERE age < 20;
 SELECT * FROM students WHERE name = "Priya";
+
+
+
+conditons in where:
+SELECT *
+FROM students
+WHERE condition1 AND condition2;
+
+use also (or,and,not)
+where not age = 20;
+real life example:
+SELECT *
+FROM users
+WHERE email="abc@gmail.com"
+AND password="123456";
+
+and or or sathme:
+SELECT *
+FROM students
+WHERE (name="Sandeep" OR age=20)
+AND id=5;
