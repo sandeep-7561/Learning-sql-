@@ -1,0 +1,39 @@
+Create database:
+CERATE DATABASE {name of database);
+
+
+Select from database:
+USE {name of database);
+
+
+Create Table in database:
+CREATE TABLE students (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(100),
+    age INT
+);
+
+
+insert data into table in sql:
+INSERT INTO students(name, age)
+VALUES("Sandeep", 20);
+
+multub values:
+INSERT INTO students(name, age)
+VALUES
+("Amit",19),
+("Rohan",21),
+("Priya",20);
+
+if you want to see all table:
+Select * from students;
+
+if you want ot see just some columns:
+select name from students;
+
+
+user of where in sql:
+select {col name} from {table name} WHERE age=20; /condition like constructors
+
+
+
