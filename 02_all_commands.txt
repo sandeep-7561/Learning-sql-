@@ -36,4 +36,9 @@ user of where in sql:
 select {col name} from {table name} WHERE age=20; /condition like constructors
 
 
-
+examples: (queries)
+SELECT * FROM students;
+SELECT * FROM students WHERE age = 20;
+SELECT * FROM students WHERE age = 20;
+SELECT * FROM students WHERE age < 20;
+SELECT * FROM students WHERE name = "Priya";
