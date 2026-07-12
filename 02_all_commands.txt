@@ -99,3 +99,34 @@ DROP TABLE students;
 Delete database (danger):
 DROP DATABASE school;
 
+
+
+
+ORDER = Sequence / Kram:
+SELECT *
+FROM students
+ORDER BY age;
+
+same order by but using ASC (Ascending):
+Small → Large
+A → Z
+0 → 9
+SELECT *
+FROM students
+ORDER BY name/age ASC;
+
+DESC (Descending):
+SELECT *
+FROM students
+ORDER BY age DESC;
+
+limit (if you want to see top 3 rows):
+SELECT *
+FROM students
+LIMIT 3;
+
+Order by + limit:
+SELECT *
+FROM students
+ORDER BY age DESC
+LIMIT 2;
