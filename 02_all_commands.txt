@@ -81,3 +81,21 @@ name = "Sandy",
 age = 22
 WHERE id = 1;
 
+
+
+
+
+DELETE row(records):
+DELETE FROM students
+WHERE id = 2;
+
+
+Delete all records from table:
+TRUNCATE TABLE students;
+
+Delete table (danger):
+DROP TABLE students;
+
+Delete database (danger):
+DROP DATABASE school;
+
