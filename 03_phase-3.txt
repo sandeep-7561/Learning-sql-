@@ -71,3 +71,36 @@ SELECT blood_group,
 COUNT(*)
 FROM patients
 GROUP BY blood_group;
+
+
+
+
+
+
+
+
+-------------------------------------------------
+
+
+Alter:
+add column:
+ALTER TABLE employees
+ADD blood_group VARCHAR(5);
+
+
+Modify Column:
+ALTER TABLE employees
+MODIFY phone VARCHAR(20);
+
+Rename column:
+ALTER TABLE employees
+RENAME COLUMN phone
+TO mobile_number;
+
+Drop column:
+ALTER TABLE employees
+DROP COLUMN email;
+
+Rename table:
+ALTER TABLE employees
+RENAME TO staff;
