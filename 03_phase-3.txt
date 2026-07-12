@@ -42,3 +42,32 @@ SELECT COUNT(*)
 FROM students
 WHERE age >=20;
 
+-----------------------------------------------
+
+GROUP BY:
+SELECT city, Count(*) ( show city name and total students form this city)
+FROM students
+GROUP BY city;
+
+HAVING:
+WHERE (filter row)
+HAVING (filter group)
+
+SELECT city, COUNT(*)
+FROM students
+GROUP BY city
+HAVING COUNT(*) >= 2;
+
+real world examples:
+(amazon)
+SELECT category,
+COUNT(*)
+FROM products
+GROUP BY category;
+
+
+(Hospital)
+SELECT blood_group,
+COUNT(*)
+FROM patients
+GROUP BY blood_group;

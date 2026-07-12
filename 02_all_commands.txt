@@ -153,7 +153,7 @@ WHERE name LIKE "R_hul";(_ means only one character)
 
 
 example:
-(amazom)
+(amazon)
 SELECT *
 FROM products
 WHERE product_name LIKE "%iphone%";
