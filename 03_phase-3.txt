@@ -1,0 +1,44 @@
+
+Data Analysis:
+Aggregate Functions
+COUNT()
+SUM()
+AVG()
+MIN()
+MAX()
+
+
+COUNT(): (how much rows are there including null)
+SELECT COUNT(*)
+FROM students;
+
+(count all age rows but not including null value)
+SELECT COUNT(age)
+FROM students;
+
+(Count only null value in age)
+select count(*) from students where age iS NULL;
+
+
+SUM():
+SELECT SUM(salary)
+FROM employees;
+
+
+AVG():
+SELECT AVG(age)
+FROM students;
+
+MIN():
+SELECT MIN(age)
+FROM students;
+
+MAX():
+SELECT MAX(age)
+FROM students;
+
+Aggregate + WHERE:
+SELECT COUNT(*)
+FROM students
+WHERE age >=20;
+
