@@ -130,3 +130,35 @@ SELECT *
 FROM students
 ORDER BY age DESC
 LIMIT 2;
+
+
+
+
+
+
+
+
+
+Like: (search eng.)
+SELECT *
+FROM students
+WHERE name LIKE "San%"; (san% means start the name by san)
+(WHERE name LIKE "%ep"; (%ep means end the name with ep))
+(WHERE name LIKE "%dee%"; (means in center no matter where but in center))
+
+user of _:
+SELECT *
+FROM students
+WHERE name LIKE "R_hul";(_ means only one character)
+
+
+example:
+(amazom)
+SELECT *
+FROM products
+WHERE product_name LIKE "%iphone%";
+
+(youtube)
+SELECT *
+FROM videos
+WHERE title LIKE "%python%";
