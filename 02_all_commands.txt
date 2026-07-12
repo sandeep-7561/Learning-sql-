@@ -162,3 +162,46 @@ WHERE product_name LIKE "%iphone%";
 SELECT *
 FROM videos
 WHERE title LIKE "%python%";
+
+
+
+
+
+
+
+
+
+IN:
+SELECT *
+FROM students
+WHERE age IN (20,22); (() is the list)
+(WHERE name IN ("Rahul","Amit");)
+
+BETWEEN:
+SELECT *
+FROM students
+WHERE admission_date
+BETWEEN "2025-01-01" AND "2025-12-31";
+
+DISTINCT (get Unique values):
+SELECT DISTINCT city
+FROM students;
+(remove duplicate values)
+
+NULL: ( missing values find)
+SELECT *
+FROM students
+WHERE phone IS NULL;
+(WHERE phone IS NOT NULL;) For not null values
+
+
+real world example:
+(hospital)
+SELECT *
+FROM patients
+WHERE mobile IS NULL;
+
+(Placement Company)
+SELECT *
+FROM employees
+WHERE salary IS NULL;
