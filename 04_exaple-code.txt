@@ -1,0 +1,44 @@
+create database company;
+use company;
+
+create table employees (
+id int auto_increment primary key,
+name varchar(100),
+age int,
+branch varchar(100)
+);
+
+
+insert into employees(name,age,branch)
+values
+('sandeep',20,'IIT'),
+('amit',25,'HR'),
+('suraj',19,'IT'),
+('sumit',22,'HR');
+select * from employees;
+
+use company;
+create table address (
+id int auto_increment primary key,
+user_id int,
+city varchar(100),
+constraint fk_user foreign key (user_id) references employees(id) on delete cascade
+);
+
+insert into address (user_id,city)
+values
+(2,'delhi'),
+(1,'Ahmedabad'),
+(3,'Surat'),
+(4,'Sumit');
+
+select * from address;
+
+SELECT
+employees.name,
+address.city
+FROM employees
+LEFT JOIN address
+ON employees.id =
+address.user_id;
+
