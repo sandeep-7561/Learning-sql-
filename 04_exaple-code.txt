@@ -56,3 +56,8 @@ address.user_id;
 
 Calling view:
 select * from name_city;
+
+
+
+Delet view:
+DROP VIEW name_city;
