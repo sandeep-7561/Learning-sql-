@@ -61,3 +61,26 @@ select * from name_city;
 
 Delet view:
 DROP VIEW name_city;
+
+
+------------------------------- stored procedures ----------------------------------------
+FUNCTIONS TYPE: (stored procedures)
+
+DELIMITER $$
+CREATE PROCEDURE AddUser(
+    IN p_name VARCHAR(100),
+    IN p_salary INT
+)
+BEGIN
+    INSERT INTO employees(name, salary)
+    VALUES (p_name, p_salary);
+    SELECT * FROM employees;
+END $$
+DELIMITER ;
+
+
+CALL AddUser('Sanju Baba', 5000000);
+
+
+delete:
+drop procedure if exists AddUser;
