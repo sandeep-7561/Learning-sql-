@@ -42,3 +42,17 @@ LEFT JOIN address
 ON employees.id =
 address.user_id;
 
+----------------------- view --------------------------------
+
+VIEW:
+create view name_city as
+SELECT
+employees.name,
+address.city
+FROM employees
+right JOIN address
+ON employees.id =
+address.user_id;
+
+Calling view:
+select * from name_city;
